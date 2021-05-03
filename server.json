@@ -1,12 +1,3 @@
 {
-  "foods": [
-    {
-      "image": "22222222222222222222222222222222",
-      "name": "2222",
-      "price": "111",
-      "description": "111",
-      "available": true,
-      "id": 1
-    }
-  ]
+  "foods": []
 }
