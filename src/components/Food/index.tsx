@@ -5,7 +5,22 @@ import { Container } from './styles';
 import api from '../../services/api';
 
 
-export default function Food({ food, handleDelete, handleEditFood }) {
+interface foods {
+  id: number;
+  image: string;
+  name: string;
+  description: string;
+  price: string;
+}
+
+interface FoodProps {
+  handleDelete: (id: number) => void;
+  handleEditFood: (food: foods) => void;
+  food: foods;
+}
+
+
+export default function Food({ food, handleDelete, handleEditFood }: FoodProps) {
 
 
   const[isAvailable, setIsAvailable] = useState(true)
