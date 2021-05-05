@@ -17,7 +17,7 @@ interface foods {
 interface ModalEditFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  editingFood: {};
+  editingFood: foods | undefined;
   handleUpdateFood: (food: foods) => void;
 }
 
