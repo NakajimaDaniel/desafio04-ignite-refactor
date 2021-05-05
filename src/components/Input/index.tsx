@@ -12,10 +12,11 @@ import { Container } from './styles';
 
 interface InputProps {
   name: string;
-  icon: string;
+
+  placeholder: string;
 }
 
-export default function Input({ name, icon:Icon, ...rest }: InputProps) {
+export default function Input({ name, ...rest }: InputProps) {
   const inputRef = useRef(null);
 
   const [isFocused, setIsFocused] = useState(false);
